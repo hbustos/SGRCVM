@@ -1,4 +1,25 @@
-<div  align="center" id="crearusu"><br>
+<?php /* Smarty version Smarty 3.1.4, created on 2012-07-08 17:10:22
+         compiled from "./templates/crea_usuario.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:4876638154ff9ff4bce63a7-75405509%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '81abf281f2af704214aacc9e5224f139456b3c5a' => 
+    array (
+      0 => './templates/crea_usuario.tpl',
+      1 => 1341785315,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '4876638154ff9ff4bce63a7-75405509',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty 3.1.4',
+  'unifunc' => 'content_4ff9ff4bd7492',
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_4ff9ff4bd7492')) {function content_4ff9ff4bd7492($_smarty_tpl) {?><div  align="center" id="crearusu"><br>
 <table border="0">
   <tr>
     <td bgcolor="#0066FF" align="center" valign="middle" ><h2>Creaci&oacute;n de Usuarios </h2></td>
@@ -32,3 +53,4 @@
   </tr>
 </table>
 </div>
+<?php }} ?>

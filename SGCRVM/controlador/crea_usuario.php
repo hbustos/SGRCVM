@@ -20,24 +20,28 @@ if (isset($_REQUEST['page']) && isset($_REQUEST['accion'])) {
         if ($accion == "crea") {
                 $smarty->assign('vista', $accion . "_" . $page);
                 $smarty->display("index.tpl");
-           if(isset($_REQUEST['id'])){
-                $id = $_REQUEST['id'];
+           if(isset($_REQUEST['usuario'])){
                 $nombre = $_REQUEST['nombre'];
-                $apellido = $_REQUEST['apellido'];
+                $usuario = $_REQUEST['usuario'];
+                $identificacion = $_REQUEST['identificacion'];
+                $clave = $_REQUEST['clave'];
+                $id_jefe = $_REQUEST['id_jefe'];
                 $estado = $_REQUEST['estado'];
+                $tipo = $_REQUEST['tipo'];
 		
                         //--SE VALIDAN LOS DATOS--
-                        if(empty($_REQUEST['id'])){
-                                $smarty->assign('mensaje','Falta el id, no se crea');
+                        if(empty($_REQUEST['clave'])){
+                                $smarty->assign('mensaje','Falta la clave, no se crea');
                                 $smarty->display("mensaje.tpl");
                         }else if(empty($_REQUEST['nombre'])){
                                 $smarty->assign('mensaje','Falta el nombre, no se crea');
                                 $smarty->display("mensaje.tpl");
-                        }else if(empty($_REQUEST['apellido'])){
-                                $smarty->assign('mensaje','Falta el apellido, no se crea');
+                        }else if(empty($_REQUEST['identificacion'])){
+                                $smarty->assign('mensaje','Falta la identificacion, no se crea');
                                 $smarty->display("mensaje.tpl");
                         }else{
-	                	$usu->crearUsu($id,$nombre,$apellido,$estado);
+				$clave = md5($clave);
+	                	$usu->crearUsu($nombre,$usuario,$clave,$identificacion,$id_jefe,$tipo,$estado);
 				$movimiento = $accion."->".$page."->".$id;
 				$mov->insertarMov($_SESSION['id_usuario'],$movimiento);
 			}

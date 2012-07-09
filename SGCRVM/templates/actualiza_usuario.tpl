@@ -6,10 +6,10 @@
   <tr>
     <td height="301">
 	<form  name="crearusu" method="GET">
-        <br>ID USUARIO: <input type="text" name="id" id="id"/><br>
+        <br>USUARIO: <input type="text" name="id" id="id"/><br>
         <br>ESTADO USUARIO: <select name="estado">
-          <option value="2">Inactivo</option>
-          <option value="0">Activo</option>
+          <option value="0">Inactivo</option>
+          <option value="1">Activo</option>
         </select>
         <input type="hidden" name="accion" value="actualiza">
         <input type="hidden" name="page" value="usuario">
