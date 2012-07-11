@@ -19,15 +19,15 @@
 -- Current Database: `SGCRVM`
 --
 
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ `SGCRVM` /*!40100 DEFAULT CHARACTER SET latin1 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `SGCRVM` /*!40100 DEFAULT CHARACTER SET latin1 */; /*Creacion Base de Datos*/
 
-USE `SGCRVM`;
+USE `SGCRVM`; /* Sentencia para la utilizar la base de datos SGRCVM*/
 
 --
 -- Table structure for table `Visita`
 --
 
-DROP TABLE IF EXISTS `Visita`;
+DROP TABLE IF EXISTS `Visita`; /*Borra la tabla Visita si en la base de datos ya existe un tabla con mismo nombre*/
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `Visita` (
