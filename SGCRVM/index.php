@@ -9,7 +9,7 @@
  */
 
 
-ini_set('display_errors', 1);
+ini_set('display_errors',1);
 error_reporting(E_ERROR);
 
 setlocale (LC_TIME,"spanish");
@@ -19,10 +19,12 @@ include('clases/clsDatabase.php');
 include('clases/clsAuth.php');
 include('clases/clsMovimiento.php');
 include('clases/clsUsuario.php');
-include('clases/clsProyecto.php');
 include('clases/clsActividad.php');
 include('clases/clsEtapa.php');
 include('clases/clsInforme.php');
+include('clases/clsProyecto.php');
+
+include('clases/clsCliente.php');
 
 $auth = new clsAuth();
 $usu = new clsUsuario();
@@ -39,7 +41,8 @@ $etapa->SetDb($database);
 $mov->SetDb($database);
 $informe->SetDb($database);
 $smarty = new Smarty();
-
+$cliente = new clsCliente();
+$cliente->SetDb($database);
 
 if ($auth->logueado()) {
 	if (isset($_REQUEST['logout'])) {
@@ -73,8 +76,12 @@ if ($auth->logueado()) {
 } else {
         //--Validacion de login--
         if (isset($_REQUEST['login'])) {
+		
                 //echo $_REQUEST['txtUsuario'];
-                $ret = $auth->login($user = $_REQUEST['txtUsuario']);
+                //echo $_REQUEST['txtClave'];
+		$clave = md5($_REQUEST['txtClave']);
+	
+                $ret = $auth->login($user = $_REQUEST['txtUsuario'],$clave);
 		
                 if ($ret == TRUE) {
                		$smarty->assign('user',$SESSION['id_usuario']);
@@ -85,7 +92,7 @@ if ($auth->logueado()) {
                         $smarty->display('login.tpl');
                         $_SESSION['estado_usuario'] = 3;
                 }else{
-                        $smarty->assign('mensaje', 'Usuario no valido');
+                        $smarty->assign('mensaje', 'Usuario o clave invalido');
                         $smarty->display('login.tpl');
                 }
         } else {

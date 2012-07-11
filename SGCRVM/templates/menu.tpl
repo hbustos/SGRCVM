@@ -44,12 +44,12 @@
 
     <li><a href="#"
         onmouseover="mopen('m4')"
-        onmouseout="mclosetime()">Menu4</a>
+        onmouseout="mclosetime()">Listar</a>
         <div id="m4"
             onmouseover="mcancelclosetime()"
             onmouseout="mclosetime()">
-        <a href="index.php?page=detalle&accion=lista">Item1</a>
-        <a href="index.php?page=responsable&accion=lista">Item2</a>
+        <a href="index.php?page=cliente&accion=lista">Clientes</a>
+        <a href="index.php?page=inventario&accion=lista">Inventario</a>
         <a href="index.php?page=movimiento&accion=lista">Item3</a>
         </div>
     </li>

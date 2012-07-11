@@ -1,22 +1,22 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2012-07-10 22:36:11
-         compiled from "./templates/lista_usuario.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:7504890454ff9ffb5661a58-12287118%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty 3.1.4, created on 2012-07-10 22:34:57
+         compiled from "./templates/lista_cliente.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:9742108524ffcf03c490643-15370414%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '717833ffdc68da09b007dd3134ecec105ae8c400' => 
+    '1c773db1060d06b97216c0986a2fa2f0b3f1b950' => 
     array (
-      0 => './templates/lista_usuario.tpl',
-      1 => 1341800820,
+      0 => './templates/lista_cliente.tpl',
+      1 => 1341977693,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '7504890454ff9ffb5661a58-12287118',
+  'nocache_hash' => '9742108524ffcf03c490643-15370414',
   'function' => 
   array (
   ),
   'version' => 'Smarty 3.1.4',
-  'unifunc' => 'content_4ff9ffb57d418',
+  'unifunc' => 'content_4ffcf03c55e73',
   'variables' => 
   array (
     'array' => 0,
@@ -24,11 +24,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_4ff9ffb57d418')) {function content_4ff9ffb57d418($_smarty_tpl) {?><?php if (!is_callable('smarty_function_cycle')) include '/var/www/SGCRVM/smarty/libs/plugins/function.cycle.php';
+<?php if ($_valid && !is_callable('content_4ffcf03c55e73')) {function content_4ffcf03c55e73($_smarty_tpl) {?><?php if (!is_callable('smarty_function_cycle')) include '/var/www/SGCRVM/smarty/libs/plugins/function.cycle.php';
 ?><div align="center">
 <table>
 	<tr style="background: gray">
-	<td><b>Id </td>  <td><b> Usuario </td> <td><b> Nombres Apellidos </td><td><b> Estado</b></td>   <td><b> Identificacion </td> <td> <b> Tipo Usuario <td><b> Jefe  </td></tr>
+	<td><b>Id </td>  <td><b> Cliente </td> <td><b> Visitador </td><td><b> Direccion </b></td>   <td><b> Telefono </td> <td> <b> Identificacion <td><b> Correo  </td></tr>
 	<br>
 <?php  $_smarty_tpl->tpl_vars['item'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['item']->_loop = false;
  $_smarty_tpl->tpl_vars['key'] = new Smarty_Variable;

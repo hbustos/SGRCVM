@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2012-07-08 16:44:40
+<?php /* Smarty version Smarty 3.1.4, created on 2012-07-10 22:15:12
          compiled from "./templates/menu.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:14569685144ff9ff486827e3-21547163%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '243b1378187b2878c10cdd133ad5f270cdcebcd8' => 
     array (
       0 => './templates/menu.tpl',
-      1 => 1341463223,
+      1 => 1341976509,
       2 => 'file',
     ),
   ),
@@ -15,13 +15,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty 3.1.4',
+  'unifunc' => 'content_4ff9ff487a443',
   'variables' => 
   array (
     'user' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty 3.1.4',
-  'unifunc' => 'content_4ff9ff487a443',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_4ff9ff487a443')) {function content_4ff9ff487a443($_smarty_tpl) {?><div id="menu">
 <ul id="sddm">
@@ -69,12 +69,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
     <li><a href="#"
         onmouseover="mopen('m4')"
-        onmouseout="mclosetime()">Menu4</a>
+        onmouseout="mclosetime()">Listar</a>
         <div id="m4"
             onmouseover="mcancelclosetime()"
             onmouseout="mclosetime()">
-        <a href="index.php?page=detalle&accion=lista">Item1</a>
-        <a href="index.php?page=responsable&accion=lista">Item2</a>
+        <a href="index.php?page=cliente&accion=lista">Clientes</a>
+        <a href="index.php?page=inventario&accion=lista">Inventario</a>
         <a href="index.php?page=movimiento&accion=lista">Item3</a>
         </div>
     </li>

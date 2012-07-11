@@ -12,8 +12,11 @@ class clsAuth {
 		$this->db = $cn;
 	}
 
-	function login($usuario) {
-		$sql = "SELECT Id, Usuario, NombresApellidos, Estado FROM usuarios WHERE Usuario = '$usuario' LIMIT 0,1";
+	function login($usuario,$clave) {
+		$sql = "SELECT Id, Usuario, NombresApellidos, Estado FROM usuarios 
+			WHERE Usuario = '$usuario' 
+			AND Contrasena = '$clave'
+			LIMIT 0,1";
 
 
 		$ret = $this->db->consulta($sql);

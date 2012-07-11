@@ -7,9 +7,10 @@
 <div align="center" id="login">
 <form name="login" method="GET">
 {$mensaje}
-<input type="text" name="txtUsuario" id="txtUsuario">
+<br>Usuario : <input type="text" name="txtUsuario" id="txtUsuario">
+<br>  Clave : <input type="password" name="txtClave" id="txtClave">
 <input type="hidden" name="login" value="login">
-<input type="submit" value="Ingresar">
+<br><input type="submit" value="Ingresar">
 </form>
 
 </div>
