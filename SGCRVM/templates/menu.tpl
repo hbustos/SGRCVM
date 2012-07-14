@@ -27,7 +27,7 @@
 
     <li><a href="#"
         onmouseover="mopen('m3')"
-        onmouseout="mclosetime()">Menu3</a>
+        onmouseout="mclosetime()">Visitar Vender</a>
         <div id="m3"
             onmouseover="mcancelclosetime()"
             onmouseout="mclosetime()">
@@ -35,7 +35,7 @@
         <a href="index.php?page=etapa&accion=crea">Item2</a>
         <a href="index.php?page=etapa&accion=actualiza">Item3</a>
         <a href="index.php?page=etapa&accion=borra">Item4</a>
-        <a href="index.php?page=actividad&accion=lista">Item5</a>
+        <a href="index.php?page=venta&accion=vender">Vender</a>
         <a href="index.php?page=actividad&accion=crea">Item6</a>
         <a href="index.php?page=actividad&accion=actualiza">Item7</a>
         <a href="index.php?page=actividad&accion=borra">Item8</a>

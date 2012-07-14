@@ -9,8 +9,8 @@
  */
 
 
-ini_set('display_errors',1);
-error_reporting(E_ERROR);
+ini_set('display_errors',0);
+error_reporting(E_ALL);
 
 setlocale (LC_TIME,"spanish");
 
@@ -25,6 +25,7 @@ include('clases/clsInforme.php');
 include('clases/clsProyecto.php');
 
 include('clases/clsCliente.php');
+include('clases/clsInventario.php');
 
 $auth = new clsAuth();
 $usu = new clsUsuario();
@@ -43,6 +44,9 @@ $informe->SetDb($database);
 $smarty = new Smarty();
 $cliente = new clsCliente();
 $cliente->SetDb($database);
+$inventario = new clsInventario();
+$inventario->SetDb($database);
+
 
 if ($auth->logueado()) {
 	if (isset($_REQUEST['logout'])) {
