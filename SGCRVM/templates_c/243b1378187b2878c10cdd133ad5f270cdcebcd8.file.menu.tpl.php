@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2012-07-13 21:13:30
+<?php /* Smarty version Smarty 3.1.4, created on 2012-07-15 21:05:51
          compiled from "./templates/menu.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:14569685144ff9ff486827e3-21547163%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '243b1378187b2878c10cdd133ad5f270cdcebcd8' => 
     array (
       0 => './templates/menu.tpl',
-      1 => 1342232005,
+      1 => 1342404348,
       2 => 'file',
     ),
   ),
@@ -99,7 +99,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     </li>
 </ul>
 <td>
-Usuario en el sistema : <?php echo $_smarty_tpl->tpl_vars['user']->value;?>
+Usuario en el sistema : <?php echo mb_strtoupper($_smarty_tpl->tpl_vars['user']->value,SMARTY_RESOURCE_CHAR_SET);?>
 
 </td>
 <div style="clear:both"></div>

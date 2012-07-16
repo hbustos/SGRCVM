@@ -17,7 +17,8 @@ class clsInventario {
 		$this->db = $cn;
 	}
 
-	function listarInventario(){
+	function listarInventario()
+	{
 		$sql = "SELECT * 
 			FROM inventarios 
 			ORDER BY Descripcion ASC";
@@ -29,6 +30,27 @@ class clsInventario {
 		}else{
 			return $ret;
 		}
+	}
+	function consultarCantidad($id_producto)
+	{
+		$sql = "SELECT Cantidad FROM inventarios WHERE Cantidad = $id_producto";
+		$ret = $this->db->consulta($sql);
+		if ($ret === FALSE){
+			return FALSE;
+		}else{
+			return $ret;
+		}	
+	}
+	function vender($id_visita,$id_producto,$cantidad)
+	{
+		$sql = "INSERT INTO ventas (Id_Visita,Id_Producto,Unidades)VALUES ('$id_visita','$id_producto','$cantidad')";	
+		$ret = $this->db->consulta($sql);
+		//echo $sql;
+		if ($ret === FALSE){
+                        return FALSE;
+                }else{
+                        return $ret;
+                }
 	}
 }
 

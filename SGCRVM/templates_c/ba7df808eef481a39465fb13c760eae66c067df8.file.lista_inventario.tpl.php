@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2012-07-11 21:16:43
+<?php /* Smarty version Smarty 3.1.4, created on 2012-07-15 20:38:14
          compiled from "./templates/lista_inventario.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:10473740794ffe30b08debd5-25135336%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ba7df808eef481a39465fb13c760eae66c067df8' => 
     array (
       0 => './templates/lista_inventario.tpl',
-      1 => 1342059398,
+      1 => 1342402693,
       2 => 'file',
     ),
   ),
@@ -42,7 +42,7 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
 	<td><?php echo $_smarty_tpl->tpl_vars['item']->value[0];?>
  </td><td> <?php echo $_smarty_tpl->tpl_vars['item']->value[1];?>
  </td><td> <?php echo $_smarty_tpl->tpl_vars['item']->value[2];?>
- </td><td> <?php echo $_smarty_tpl->tpl_vars['item']->value[3];?>
+ </td><td> <?php echo mb_strtoupper($_smarty_tpl->tpl_vars['item']->value[3],SMARTY_RESOURCE_CHAR_SET);?>
  </td> </tr>
 </tr>
 <?php } ?>

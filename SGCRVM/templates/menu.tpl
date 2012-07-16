@@ -73,7 +73,7 @@
     </li>
 </ul>
 <td>
-Usuario en el sistema : {$user}
+Usuario en el sistema : {$user|upper}
 </td>
 <div style="clear:both"></div>
 <br>

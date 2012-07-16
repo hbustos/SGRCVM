@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2012-07-10 22:34:57
+<?php /* Smarty version Smarty 3.1.4, created on 2012-07-15 20:33:38
          compiled from "./templates/lista_cliente.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:9742108524ffcf03c490643-15370414%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '1c773db1060d06b97216c0986a2fa2f0b3f1b950' => 
     array (
       0 => './templates/lista_cliente.tpl',
-      1 => 1341977693,
+      1 => 1342402416,
       2 => 'file',
     ),
   ),
@@ -40,9 +40,9 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
 <tr style="background: <?php echo smarty_function_cycle(array('values'=>'silver, gray'),$_smarty_tpl);?>
 ">
 	<td><?php echo $_smarty_tpl->tpl_vars['item']->value[0];?>
- </td><td> <?php echo $_smarty_tpl->tpl_vars['item']->value[1];?>
+ </td><td> <?php echo mb_strtoupper($_smarty_tpl->tpl_vars['item']->value[1],SMARTY_RESOURCE_CHAR_SET);?>
  </td><td> <?php echo $_smarty_tpl->tpl_vars['item']->value[2];?>
- </td><td> <?php echo $_smarty_tpl->tpl_vars['item']->value[3];?>
+ </td><td> <?php echo mb_strtoupper($_smarty_tpl->tpl_vars['item']->value[3],SMARTY_RESOURCE_CHAR_SET);?>
  </td>  <td> <?php echo $_smarty_tpl->tpl_vars['item']->value[4];?>
  </td>   <td> <?php echo $_smarty_tpl->tpl_vars['item']->value[5];?>
  </td> <td><?php echo $_smarty_tpl->tpl_vars['item']->value[6];?>

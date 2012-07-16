@@ -5,7 +5,7 @@
 	<br>
 {foreach from=$array key=key item=item}
 <tr style="background: {cycle values='silver, gray'}">
-	<td>{$item.0} </td><td> {$item.1} </td><td> {$item.2} </td><td> {$item.3} </td> </tr>
+	<td>{$item.0} </td><td> {$item.1} </td><td> {$item.2} </td><td> {$item.3|upper} </td> </tr>
 </tr>
 {/foreach}
 </table>

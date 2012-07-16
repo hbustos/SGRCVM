@@ -73,7 +73,6 @@ if ($auth->logueado()) {
 		}
 
 	} else {
-		//print_r($_SESSION);
                	$smarty->assign('user',$_SESSION['id_usuario']);
 		$smarty->display("index.tpl");
 	}
@@ -88,7 +87,13 @@ if ($auth->logueado()) {
                 $ret = $auth->login($user = $_REQUEST['txtUsuario'],$clave);
 		
                 if ($ret == TRUE) {
-               		$smarty->assign('user',$SESSION['id_usuario']);
+			$ret2 = Array();
+			
+			$ret2 = $usu->buscarUsu($user);
+			$_SESSION['id'] = $ret2[0][0];
+			//echo "ID DEL USUARIO ".$ret2[0][0].$SESSION['id'];
+               		$smarty->assign('user',$_SESSION['id_usuario']);
+               		$smarty->assign('id',$_SESSION['id']);
                         $smarty->display('index.tpl');
 
                 } else if($_SESSION['estado_usuario'] == 2){

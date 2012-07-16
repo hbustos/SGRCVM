@@ -17,7 +17,7 @@ class clsUsuario {
 		$this->db = $cn;
 	}
 	function buscarUsu($id){
-		$sql = "SELECT Usuario FROM usuarios where Usuario = '$id'";	
+		$sql = "SELECT * FROM usuarios where Usuario = '$id'";	
 		$ret = $this->db->consulta($sql);
 
 		if($ret === FALSE){
