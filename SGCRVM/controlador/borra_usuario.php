@@ -3,7 +3,7 @@ $smarty->assign('user',$_SESSION['id_usuario']);
 
 
 if (isset($_REQUEST['page']) && isset($_REQUEST['accion'])) {
-	
+ if (($_SESSION['Permisos'] == 2) || ($_SESSION['Permisos'] == 1)){	
 	$page = $_REQUEST['page'];
 	$accion = $_REQUEST['accion'];
 
@@ -24,12 +24,12 @@ if (isset($_REQUEST['page']) && isset($_REQUEST['accion'])) {
 			}
 		}
 	}
-
+   }else{
+                                $smarty->assign('mensaje','Usted no cuenta con los permisos para esta accion');
+                                $smarty->display("index.tpl");
+   }
 } else {
 	$smarty->display("not_found.tpl");
 	
 }
-
-
-
 ?>

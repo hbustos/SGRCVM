@@ -91,7 +91,8 @@ if ($auth->logueado()) {
 			
 			$ret2 = $usu->buscarUsu($user);
 			$_SESSION['id'] = $ret2[0][0];
-			//echo "ID DEL USUARIO ".$ret2[0][0].$SESSION['id'];
+			$_SESSION['Permisos'] = $ret2[0][8];
+			//echo "ID DEL USUARIO ".$_SESSION['id']." Permisos: ".$_SESSION['Permisos'];
                		$smarty->assign('user',$_SESSION['id_usuario']);
                		$smarty->assign('id',$_SESSION['id']);
                         $smarty->display('index.tpl');
