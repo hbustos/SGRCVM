@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2012-07-15 22:32:40
+<?php /* Smarty version Smarty 3.1.4, created on 2012-07-17 20:10:53
          compiled from "./templates/vender_venta.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:4452239065000efe2ce7c63-76083876%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'db7509b3ecd7a64fea85d8723e69c6e96755f039' => 
     array (
       0 => './templates/vender_venta.tpl',
-      1 => 1342409556,
+      1 => 1342573377,
       2 => 'file',
     ),
   ),
