@@ -5,7 +5,7 @@ $smarty->assign('id',$_SESSION['id']);
 if (isset($_REQUEST['page']) && isset($_REQUEST['accion'])) {
 
 
-	if (($_SESSION['Permisos'] == 3) || ($_SESSION['Permisos'] == 1)){	
+	if (($_SESSION['Permisos'] == 5) || ($_SESSION['Permisos'] == 1)){	
 		$page = $_REQUEST['page'];
 		$accion = $_REQUEST['accion'];
 	
