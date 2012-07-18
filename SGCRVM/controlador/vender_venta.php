@@ -21,7 +21,7 @@ if (isset($_REQUEST['page']) && isset($_REQUEST['accion'])) {
 
 		if(isset($_REQUEST['cantidad'])){
                 	$cantidad = $_REQUEST['cantidad'];
-			$fecha = $_REQUEST['fechainiYear'].'-'.$_REQUEST['fechainiMonth'].'-'.$_REQUEST['fechainiDay'];
+			$fecha = $_REQUEST['fechaYear'].'-'.$_REQUEST['fechaMonth'].'-'.$_REQUEST['fechaDay'];
 			$id_cliente = $_REQUEST['id_cliente'];
 			$id_producto = $_REQUEST['id_producto'];
                         //--SE VALIDAN LOS DATOS--
@@ -30,13 +30,15 @@ if (isset($_REQUEST['page']) && isset($_REQUEST['accion'])) {
                                 $smarty->display("mensaje.tpl");
                         }else if(is_numeric($_REQUEST['cantidad'])){
 				$cant = $inventario->consultarCantidad($id_producto);
-				echo $cant;
-				if($cantidad > $cant){
-					$smarty->assign('mensaje','La cantidad es superior al inventario actual, no se crea la venta');
+				//echo "SIIIIIIIIIII 0 ".$cant[0][0]." 1 ". $cant[0][1]." 2 ".$cant[0][2];	
+				if($cantidad > $cant[0][0]){
+					$smarty->assign('mensaje','La cantidad es superior al inventario actual, no se crea la venta. ');
 	                                $smarty->display("mensaje.tpl");
 				}else{
-					$inventario->vender(11,$id_producto,$cantidad);
-        	                        $movimiento = $accion."->".$page."->".$id;
+					$inventario->vender(11,$id_producto,$cantidad,$fecha);
+					$cantidad = ($cant[0][0] - $cantidad);
+					$inventario->actualizarInventario($cant[0][1] + 1,$cantidad,$id_producto);
+        	                        $movimiento = $accion."->".$page."->".$usuario;
                 	                $mov->insertarMov($_SESSION['id_usuario'],$movimiento);
 				}
                         }else{
@@ -44,14 +46,8 @@ if (isset($_REQUEST['page']) && isset($_REQUEST['accion'])) {
                                 $smarty->display("mensaje.tpl");
                         }
 		}
-
 	}
-
 } else {
 	$smarty->display("not_found.tpl");
-	
 }
-
-
-
 ?>

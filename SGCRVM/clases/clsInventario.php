@@ -31,25 +31,40 @@ class clsInventario {
 			return $ret;
 		}
 	}
+
 	function consultarCantidad($id_producto)
 	{
-		$sql = "SELECT Cantidad FROM inventarios WHERE Cantidad = $id_producto";
+		$sql = "SELECT Cantidad,Id FROM inventarios WHERE Id_producto  = '$id_producto'";
 		$ret = $this->db->consulta($sql);
+		//echo $sql;
 		if ($ret === FALSE){
 			return FALSE;
 		}else{
 			return $ret;
 		}	
 	}
-	function vender($id_visita,$id_producto,$cantidad)
+
+	function vender($id_visita,$id_producto,$cantidad,$fecha)
 	{
-		$sql = "INSERT INTO ventas (Id_Visita,Id_Producto,Unidades)VALUES ('$id_visita','$id_producto','$cantidad')";	
+		$sql = "INSERT INTO ventas (Id_Visita,Id_Producto,Unidades,FechaEntrega)VALUES ('$id_visita','$id_producto','$cantidad','$fecha')";	
 		$ret = $this->db->consulta($sql);
 		//echo $sql;
 		if ($ret === FALSE){
                         return FALSE;
                 }else{
                         return $ret;
+                }
+	}
+	
+	function actualizarInventario($id,$cantidad,$id_producto)
+	{
+		$sql =	"UPDATE inventarios SET Cantidad = '$cantidad',Id = '$id' WHERE Id_Producto = '$id_producto'";
+		$ret = $this->db->consulta($sql);
+                //echo " dos ".$sql;
+                if ($ret === FALSE){
+                        return FALSE;
+                }else{
+                        return TRUE;
                 }
 	}
 }
