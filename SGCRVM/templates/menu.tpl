@@ -14,11 +14,11 @@
     </li>
     <li><a href="#"
         onmouseover="mopen('m2')"
-        onmouseout="mclosetime()">Menu2</a>
+        onmouseout="mclosetime()">Clientes Rutas</a>
         <div id="m2"
             onmouseover="mcancelclosetime()"
             onmouseout="mclosetime()">
-        <a href="index.php?page=proyecto&accion=lista">Item1</a>
+        <a href="index.php?page=cliente&accion=asigna">Asignar Clientes</a>
         <a href="index.php?page=proyecto&accion=crea">Item2</a>
         <a href="index.php?page=proyecto&accion=actualiza">Item3</a>
         <a href="index.php?page=proyecto&accion=borra">Item4</a>

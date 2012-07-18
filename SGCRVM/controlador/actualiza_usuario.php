@@ -30,7 +30,7 @@ if (isset($_REQUEST['page']) && isset($_REQUEST['accion'])) {
 				$smarty->display("mensaje.tpl");
           		}else{
 				$usu->actualizarUsu($id,$estado);
-                                $movimiento = $accion."->".$page."->".$id;
+                                $movimiento = $accion."->".$page."->".$usuario;
 				$mov->insertarMov($_SESSION['id_usuario'],$movimiento);
 			}
 		}

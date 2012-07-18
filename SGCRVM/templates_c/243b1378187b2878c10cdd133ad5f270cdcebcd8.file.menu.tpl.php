@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2012-07-15 21:05:51
+<?php /* Smarty version Smarty 3.1.4, created on 2012-07-17 23:52:52
          compiled from "./templates/menu.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:14569685144ff9ff486827e3-21547163%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '243b1378187b2878c10cdd133ad5f270cdcebcd8' => 
     array (
       0 => './templates/menu.tpl',
-      1 => 1342404348,
+      1 => 1342587027,
       2 => 'file',
     ),
   ),
@@ -39,11 +39,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     </li>
     <li><a href="#"
         onmouseover="mopen('m2')"
-        onmouseout="mclosetime()">Menu2</a>
+        onmouseout="mclosetime()">Clientes Rutas</a>
         <div id="m2"
             onmouseover="mcancelclosetime()"
             onmouseout="mclosetime()">
-        <a href="index.php?page=proyecto&accion=lista">Item1</a>
+        <a href="index.php?page=cliente&accion=asigna">Asignar Clientes</a>
         <a href="index.php?page=proyecto&accion=crea">Item2</a>
         <a href="index.php?page=proyecto&accion=actualiza">Item3</a>
         <a href="index.php?page=proyecto&accion=borra">Item4</a>
