@@ -22,7 +22,7 @@ class clsInventario {
 		$sql = "SELECT * 
 			FROM inventarios 
 			ORDER BY Descripcion ASC";
-		echo $sql;
+		//echo $sql;
 		$ret = $this->db->consulta($sql);
 
 		if ($ret === FALSE){
@@ -36,7 +36,7 @@ class clsInventario {
 	{
 		$sql = "SELECT Cantidad,Id FROM inventarios WHERE Id_producto  = '$id_producto'";
 		$ret = $this->db->consulta($sql);
-		echo $sql;
+		//echo $sql;
 		if ($ret === FALSE){
 			return FALSE;
 		}else{
