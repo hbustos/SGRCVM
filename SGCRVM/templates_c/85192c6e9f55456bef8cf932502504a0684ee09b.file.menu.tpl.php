@@ -1,29 +1,29 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2012-07-19 02:48:01
+<?php /* Smarty version Smarty 3.1.4, created on 2012-07-20 01:17:30
          compiled from ".\templates\menu.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2224150075941609344-64764236%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:112965007655b3ab420-03407661%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '85192c6e9f55456bef8cf932502504a0684ee09b' => 
     array (
       0 => '.\\templates\\menu.tpl',
-      1 => 1342658372,
+      1 => 1342739812,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2224150075941609344-64764236',
+  'nocache_hash' => '112965007655b3ab420-03407661',
   'function' => 
   array (
   ),
+  'version' => 'Smarty 3.1.4',
+  'unifunc' => 'content_5007655b74631',
   'variables' => 
   array (
     'user' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty 3.1.4',
-  'unifunc' => 'content_5007594198518',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5007594198518')) {function content_5007594198518($_smarty_tpl) {?><div id="menu">
+<?php if ($_valid && !is_callable('content_5007655b74631')) {function content_5007655b74631($_smarty_tpl) {?><div id="menu">
 <ul id="sddm">
     <li><a href="#"
         onmouseover="mopen('m1')"
@@ -39,16 +39,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     </li>
     <li><a href="#"
         onmouseover="mopen('m2')"
-        onmouseout="mclosetime()">Clientes Rutas</a>
+        onmouseout="mclosetime()">GESTIONAR RUTAS</a>
         <div id="m2"
             onmouseover="mcancelclosetime()"
             onmouseout="mclosetime()">
-        <a href="index.php?page=cliente&accion=asigna">Asignar Clientes</a>
-        <a href="index.php?page=proyecto&accion=crea">Item2</a>
-        <a href="index.php?page=proyecto&accion=actualiza">Item3</a>
-        <a href="index.php?page=proyecto&accion=borra">Item4</a>
+        <a href="index.php?page=proyecto&accion=crea">Crear Ruta</a>
+        <a href="index.php?page=proyecto&accion=actualiza">Editar Ruta</a>
+        <a href="index.php?page=proyecto&accion=borra">Eliminar Ruta</a>
+        <a href="index.php?page=proyecto&accion=lista">Listar Rutas</a>
         </div>
     </li>
+
 
     <li><a href="#"
         onmouseover="mopen('m3')"
@@ -86,6 +87,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             onmouseout="mclosetime()">
                 <a href="index.php?page=reportes&accion=lista">ListaVisitas</a>
         <a href="index.php?page=rventas&accion=lista">ReporteVentas</a>
+
+      <a href="index.php?page=rvisitas&accion=lista">Visitas x Dia</a>
 
         </div>
     </li>

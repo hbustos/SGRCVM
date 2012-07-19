@@ -23,7 +23,9 @@ if (isset($_REQUEST['page']) && isset($_REQUEST['accion'])) {
 		if(isset($_REQUEST['codigo'])){
 			$codigo = $_REQUEST['codigo'];
         	  	$estado = $_REQUEST['estado'];
-          		$proy->actualizarProy($codigo,$estado);
+				$usuario = $_REQUEST['usuario'];
+				$fecha = $_REQUEST['fechaAno'].'-'.$_REQUEST['fechaMes'].'-'.$_REQUEST['fechaDia'].' '.$_REQUEST['horaHora'].':'.$_REQUEST['horaMinuto'].':00';
+          		$proy->actualizarProy($codigo,$estado,$usuario,$fecha);
 			$movimiento = $accion."->".$page."->nombre:".$codigo;
                       	$mov->insertarMov($_SESSION['id_usuario'],$movimiento);
 		}

@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2012-07-19 02:48:32
+<?php /* Smarty version Smarty 3.1.4, created on 2012-07-19 03:46:35
          compiled from ".\templates\lista_reportes.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:3078850075960db4b79-75248457%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:4807500766fb2a3306-82875714%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '3078850075960db4b79-75248457',
+  'nocache_hash' => '4807500766fb2a3306-82875714',
   'function' => 
   array (
   ),
@@ -22,9 +22,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty 3.1.4',
-  'unifunc' => 'content_500759611c1c0',
+  'unifunc' => 'content_500766fb602b6',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_500759611c1c0')) {function content_500759611c1c0($_smarty_tpl) {?><?php if (!is_callable('smarty_function_cycle')) include 'C:\xampp\htdocs\SGCRVM\SGCRVM\smarty\libs\plugins\function.cycle.php';
+<?php if ($_valid && !is_callable('content_500766fb602b6')) {function content_500766fb602b6($_smarty_tpl) {?><?php if (!is_callable('smarty_function_cycle')) include 'C:\xampp\htdocs\SGCRVM\SGCRVM\smarty\libs\plugins\function.cycle.php';
 ?><div align="center">
 <table>
 	<tr style="background: gray">

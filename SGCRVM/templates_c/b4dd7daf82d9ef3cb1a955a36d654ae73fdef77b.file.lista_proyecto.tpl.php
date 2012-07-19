@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2012-07-19 03:39:44
-         compiled from ".\templates\lista_rventas.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2857450076560285819-21182299%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty 3.1.4, created on 2012-07-20 01:17:41
+         compiled from ".\templates\lista_proyecto.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:1349500895956eba33-23123265%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '7d75c5a35a8087bd281137f6e2bd6f1a57ba07e1' => 
+    'b4dd7daf82d9ef3cb1a955a36d654ae73fdef77b' => 
     array (
-      0 => '.\\templates\\lista_rventas.tpl',
-      1 => 1342394462,
+      0 => '.\\templates\\lista_proyecto.tpl',
+      1 => 1342502880,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2857450076560285819-21182299',
+  'nocache_hash' => '1349500895956eba33-23123265',
   'function' => 
   array (
   ),
@@ -22,16 +22,18 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty 3.1.4',
-  'unifunc' => 'content_5007656067975',
+  'unifunc' => 'content_500895958af9e',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5007656067975')) {function content_5007656067975($_smarty_tpl) {?><?php if (!is_callable('smarty_function_cycle')) include 'C:\xampp\htdocs\SGCRVM\SGCRVM\smarty\libs\plugins\function.cycle.php';
+<?php if ($_valid && !is_callable('content_500895958af9e')) {function content_500895958af9e($_smarty_tpl) {?><?php if (!is_callable('smarty_function_cycle')) include 'C:\xampp\htdocs\SGCRVM\SGCRVM\smarty\libs\plugins\function.cycle.php';
 ?><div align="center">
 <table>
 	<tr style="background: gray">
-	<td><b> NombresApellidos </td>
-	<td><b> Descripcion </td>
-	<td><b> Unidades </td>
-	<td><b> Subtotal </td>
+	<td><b> Codigo Ruta</b></td>
+	<td><b> Usuario </b></td>
+	<td><b> Cliente </b></td>
+	<td><b> Fecha y Hora</b></td>	
+	<td><b> Codigo de VIsita </b></td>
+	<td><b> Estado</b></td>
 	</tr>
 	<br>
 <?php  $_smarty_tpl->tpl_vars['item'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['item']->_loop = false;
@@ -51,8 +53,14 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
  </td>
 	<td> <?php echo $_smarty_tpl->tpl_vars['item']->value[3];?>
  </td>
-	</tr>
+	<td> <?php echo $_smarty_tpl->tpl_vars['item']->value[4];?>
+ </td>
+	<td> <?php echo $_smarty_tpl->tpl_vars['item']->value[5];?>
+ </td> 
+</tr>
 </tr>
 <?php } ?>
 </table>
-</div><?php }} ?>
+</div>
+
+<?php }} ?>

@@ -23,10 +23,9 @@ if (isset($_REQUEST['page']) && isset($_REQUEST['accion'])) {
 		if(isset($_REQUEST['codigo'])){
         	  	$nombre = $_REQUEST['nombre'];
 	           	$codigo = $_REQUEST['codigo'];
-           		$descrip = $_REQUEST['descrip'];
-        	  	$responsable = $_REQUEST['responsable'];
-	             	$fechaini = $_REQUEST['fechainiYear'].'-'.$_REQUEST['fechainiMonth'].'-'.$_REQUEST['fechainiDay'];
-        	     	$fechafin = $_REQUEST['fechafinYear'].'-'.$_REQUEST['fechafinMonth'].'-'.$_REQUEST['fechafinDay'];
+				$fecha = $_REQUEST['fechaAno'].'-'.$_REQUEST['fechaMes'].'-'.$_REQUEST['fechaDia'].' '.$_REQUEST['horaHora'].':'.$_REQUEST['horaMinuto'].':00';
+				$visita = $_REQUEST['codVisita'];
+				$estado = $_REQUEST['estado'];
                         //--SE VALIDAN LOS DATOS--
                         if(empty($_REQUEST['codigo'])){
                                 $smarty->assign('mensaje','Falta el codigo, no se crea');
@@ -34,29 +33,14 @@ if (isset($_REQUEST['page']) && isset($_REQUEST['accion'])) {
                         }else if(empty($_REQUEST['nombre'])){
                                 $smarty->assign('mensaje','Falta el nombre, no se crea');
                                 $smarty->display("mensaje.tpl");
-                        }else if(empty($_REQUEST['descrip'])){
-                                $smarty->assign('mensaje','Falta la descripcion, no se crea');
-                                $smarty->display("mensaje.tpl");
-                        }else if($fechaini == $fechafin){
-                                $smarty->assign('mensaje','Las fechas no pueden ser iguales, inicio:'.$fechaini.' fecha fin:'.$fechafin );
-                                $smarty->display("mensaje.tpl");
-                        }else if($fechaini > $fechafin){
-                                $smarty->assign('mensaje','La fecha final: '.$fechafin.' no puede ser menor a la de inicio: '.$fechaini);
-                                $smarty->display("mensaje.tpl");
-                        }else if(empty($_REQUEST['responsable'])){
+						}else if(empty($_REQUEST['codVisita'])){
                                 $smarty->assign('mensaje','Falta el responsable, no se crea');
                                 $smarty->display("mensaje.tpl");
                         }else{
-				$usuario = $usu->buscarUsu($responsable);
-				if(count($usuario) > 0){
-	             			$proy->crearProy($codigo,$nombre,$descrip,$fechaini,$fechafin,$responsable);
+	
+	             			$proy->crearProy($codigo,$nombre,$fecha,$visita,$estado);
 					$movimiento = $accion."->".$page."->nombre:".$nombre;
 	                                $mov->insertarMov($_SESSION['id_usuario'],$movimiento);
-					
-				}else{
-					$smarty->assign('mensaje','El Responsable : '.$responsable.' no existe, no se crea');	
-					$smarty->display("mensaje.tpl");
-				}
                         }
 
 		}

@@ -14,16 +14,17 @@
     </li>
     <li><a href="#"
         onmouseover="mopen('m2')"
-        onmouseout="mclosetime()">Clientes Rutas</a>
+        onmouseout="mclosetime()">GESTIONAR RUTAS</a>
         <div id="m2"
             onmouseover="mcancelclosetime()"
             onmouseout="mclosetime()">
-        <a href="index.php?page=cliente&accion=asigna">Asignar Clientes</a>
-        <a href="index.php?page=proyecto&accion=crea">Item2</a>
-        <a href="index.php?page=proyecto&accion=actualiza">Item3</a>
-        <a href="index.php?page=proyecto&accion=borra">Item4</a>
+        <a href="index.php?page=proyecto&accion=crea">Crear Ruta</a>
+        <a href="index.php?page=proyecto&accion=actualiza">Editar Ruta</a>
+        <a href="index.php?page=proyecto&accion=borra">Eliminar Ruta</a>
+        <a href="index.php?page=proyecto&accion=lista">Listar Rutas</a>
         </div>
     </li>
+
 
     <li><a href="#"
         onmouseover="mopen('m3')"
@@ -61,6 +62,8 @@
             onmouseout="mclosetime()">
                 <a href="index.php?page=reportes&accion=lista">ListaVisitas</a>
         <a href="index.php?page=rventas&accion=lista">ReporteVentas</a>
+
+      <a href="index.php?page=rvisitas&accion=lista">Visitas x Dia</a>
 
         </div>
     </li>
