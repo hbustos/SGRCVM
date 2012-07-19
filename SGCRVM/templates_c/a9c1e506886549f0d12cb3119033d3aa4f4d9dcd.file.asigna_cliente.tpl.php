@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2012-07-18 00:07:59
+<?php /* Smarty version Smarty 3.1.4, created on 2012-07-18 20:02:04
          compiled from "./templates/asigna_cliente.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:506974072500644af463308-68946829%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:164762329050075c8cd35825-52017395%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '506974072500644af463308-68946829',
+  'nocache_hash' => '164762329050075c8cd35825-52017395',
   'function' => 
   array (
   ),
@@ -26,9 +26,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty 3.1.4',
-  'unifunc' => 'content_500644af56d42',
+  'unifunc' => 'content_50075c8ce2cb3',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_500644af56d42')) {function content_500644af56d42($_smarty_tpl) {?><?php if (!is_callable('smarty_function_html_select_date')) include '/var/www/SGCRVM/smarty/libs/plugins/function.html_select_date.php';
+<?php if ($_valid && !is_callable('content_50075c8ce2cb3')) {function content_50075c8ce2cb3($_smarty_tpl) {?><?php if (!is_callable('smarty_function_html_select_date')) include '/var/www/SGCRVM/smarty/libs/plugins/function.html_select_date.php';
 ?><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
 <div  align="center" id="crearusu"><br>
 <table border="0">

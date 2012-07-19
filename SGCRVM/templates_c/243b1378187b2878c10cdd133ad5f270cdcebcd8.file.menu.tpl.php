@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2012-07-18 19:55:08
+<?php /* Smarty version Smarty 3.1.4, created on 2012-07-18 20:59:15
          compiled from "./templates/menu.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:44923455150075aec1ba504-77220272%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '243b1378187b2878c10cdd133ad5f270cdcebcd8' => 
     array (
       0 => './templates/menu.tpl',
-      1 => 1342659145,
+      1 => 1342663150,
       2 => 'file',
     ),
   ),
@@ -15,13 +15,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty 3.1.4',
+  'unifunc' => 'content_50075aec2679a',
   'variables' => 
   array (
     'user' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty 3.1.4',
-  'unifunc' => 'content_50075aec2679a',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_50075aec2679a')) {function content_50075aec2679a($_smarty_tpl) {?><div id="menu">
 <ul id="sddm">
@@ -56,7 +56,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <div id="m3"
             onmouseover="mcancelclosetime()"
             onmouseout="mclosetime()">
-        <a href="index.php?page=etapa&accion=lista">Item1</a>
+        <a href="index.php?page=cliente&accion=visita">Visitar Cliente</a>
         <a href="index.php?page=etapa&accion=crea">Item2</a>
         <a href="index.php?page=etapa&accion=actualiza">Item3</a>
         <a href="index.php?page=etapa&accion=borra">Item4</a>
@@ -115,4 +115,5 @@ Usuario en el sistema : <?php echo mb_strtoupper($_smarty_tpl->tpl_vars['user']-
 
 </td>
 <div style="clear:both"></div>
-<br><?php }} ?>
+<br>
+<?php }} ?>
