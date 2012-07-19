@@ -6,11 +6,11 @@
   <tr>
     <td height="301">
 	<form  name="crearusu" method="GET">
-      	<br>NOMBRES APELLIDOS : <input type="text" name="nombre" id="nombre" /><br>
-      	<br>USUARIO : <input type="text" name="usuario" id="usuario" /><br>
-        <br>IDENTIFICACION : <input type="text" name="identificacion" id="identificacion"><br>
-        <br>CONTRASEÑA : <input type="text" name="clave" id="clave"/><br>
-        <br>ID JEFE : <input type="text" name="id_jefe" id="id_jefe"/><br>
+      	<br>NOMBRES APELLIDOS : <input type="text" name="nombre" id="nombre" />
+      	<br>USUARIO : <input type="text" name="usuario" id="usuario" />
+        <br>IDENTIFICACION : <input type="text" name="identificacion" id="identificacion">
+        <br>CONTRASEÑA : <input type="password" name="clave" id="clave"/>
+        <br>ID JEFE : <input type="text" name="id_jefe" id="id_jefe"/>
         <br>ESTADO USUARIO: <select name="estado">
           <option value="1">Activo</option>
           <option value="0">Inactivo</option>

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2012-07-13 23:33:54
+<?php /* Smarty version Smarty 3.1.4, created on 2012-07-18 19:45:40
          compiled from "./templates/crea_usuario.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:4876638154ff9ff4bce63a7-75405509%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '81abf281f2af704214aacc9e5224f139456b3c5a' => 
     array (
       0 => './templates/crea_usuario.tpl',
-      1 => 1341976942,
+      1 => 1342658725,
       2 => 'file',
     ),
   ),
@@ -27,11 +27,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   <tr>
     <td height="301">
 	<form  name="crearusu" method="GET">
-      	<br>NOMBRES APELLIDOS : <input type="text" name="nombre" id="nombre" /><br>
-      	<br>USUARIO : <input type="text" name="usuario" id="usuario" /><br>
-        <br>IDENTIFICACION : <input type="text" name="identificacion" id="identificacion"><br>
-        <br>CONTRASEÑA : <input type="text" name="clave" id="clave"/><br>
-        <br>ID JEFE : <input type="text" name="id_jefe" id="id_jefe"/><br>
+      	<br>NOMBRES APELLIDOS : <input type="text" name="nombre" id="nombre" />
+      	<br>USUARIO : <input type="text" name="usuario" id="usuario" />
+        <br>IDENTIFICACION : <input type="text" name="identificacion" id="identificacion">
+        <br>CONTRASEÑA : <input type="password" name="clave" id="clave"/>
+        <br>ID JEFE : <input type="text" name="id_jefe" id="id_jefe"/>
         <br>ESTADO USUARIO: <select name="estado">
           <option value="1">Activo</option>
           <option value="0">Inactivo</option>

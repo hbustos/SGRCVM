@@ -23,7 +23,6 @@ include('clases/clsActividad.php');
 include('clases/clsEtapa.php');
 include('clases/clsInforme.php');
 include('clases/clsProyecto.php');
-
 include('clases/clsCliente.php');
 include('clases/clsInventario.php');
 
@@ -102,7 +101,7 @@ if ($auth->logueado()) {
                         $smarty->display('login.tpl');
                         $_SESSION['estado_usuario'] = 3;
                 }else{
-                        $smarty->assign('mensaje', 'Usuario o clave invalido');
+                        $smarty->assign('mensaje', 'Usuario o contrase&ntilde;a no valido');
                         $smarty->display('login.tpl');
                 }
         } else {
