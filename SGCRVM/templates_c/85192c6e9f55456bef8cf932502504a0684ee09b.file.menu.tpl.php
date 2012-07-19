@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2012-07-20 01:17:30
+<?php /* Smarty version Smarty 3.1.4, created on 2012-07-20 01:56:18
          compiled from ".\templates\menu.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:112965007655b3ab420-03407661%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '85192c6e9f55456bef8cf932502504a0684ee09b' => 
     array (
       0 => '.\\templates\\menu.tpl',
-      1 => 1342739812,
+      1 => 1342742165,
       2 => 'file',
     ),
   ),
@@ -57,7 +57,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <div id="m3"
             onmouseover="mcancelclosetime()"
             onmouseout="mclosetime()">
-        <a href="index.php?page=etapa&accion=lista">Item1</a>
+        <a href="index.php?page=cliente&accion=visita">Visitar Cliente</a>
         <a href="index.php?page=etapa&accion=crea">Item2</a>
         <a href="index.php?page=etapa&accion=actualiza">Item3</a>
         <a href="index.php?page=etapa&accion=borra">Item4</a>
@@ -90,6 +90,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
       <a href="index.php?page=rvisitas&accion=lista">Visitas x Dia</a>
 
+      <a href="http://190.25.189.134/farmaceuticosltda">Visualizacion</a>
+
         </div>
     </li>
 
@@ -118,4 +120,5 @@ Usuario en el sistema : <?php echo mb_strtoupper($_smarty_tpl->tpl_vars['user']-
 
 </td>
 <div style="clear:both"></div>
-<br><?php }} ?>
+<br>
+<?php }} ?>

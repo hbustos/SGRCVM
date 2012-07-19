@@ -65,6 +65,8 @@
 
       <a href="index.php?page=rvisitas&accion=lista">Visitas x Dia</a>
 
+      <a href="http://190.25.189.134/farmaceuticosltda">Visualizacion</a>
+
         </div>
     </li>
 
