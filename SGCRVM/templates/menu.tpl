@@ -32,7 +32,7 @@
         <div id="m3"
             onmouseover="mcancelclosetime()"
             onmouseout="mclosetime()">
-        <a href="index.php?page=etapa&accion=lista">Item1</a>
+        <a href="index.php?page=cliente&accion=visita">Visitar Cliente</a>
         <a href="index.php?page=etapa&accion=crea">Item2</a>
         <a href="index.php?page=etapa&accion=actualiza">Item3</a>
         <a href="index.php?page=etapa&accion=borra">Item4</a>
