@@ -9,7 +9,7 @@
  */
 
 
-ini_set('display_errors',0);
+ini_set('display_errors',1);
 error_reporting(E_ALL);
 
 setlocale (LC_TIME,"spanish");
@@ -26,6 +26,9 @@ include('clases/clsProyecto.php');
 
 include('clases/clsCliente.php');
 include('clases/clsInventario.php');
+include('clases/clsReportes.php');
+include('clases/clsRventas.php');
+
 
 $auth = new clsAuth();
 $usu = new clsUsuario();
@@ -46,6 +49,11 @@ $cliente = new clsCliente();
 $cliente->SetDb($database);
 $inventario = new clsInventario();
 $inventario->SetDb($database);
+$reportes = new clsReportes();
+$reportes->SetDb($database);
+$rventas = new clsRventas();
+$rventas->SetDb($database);
+
 
 
 if ($auth->logueado()) {

@@ -1,4 +1,29 @@
-<div id="menu">
+<?php /* Smarty version Smarty 3.1.4, created on 2012-07-19 02:48:01
+         compiled from ".\templates\menu.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:2224150075941609344-64764236%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '85192c6e9f55456bef8cf932502504a0684ee09b' => 
+    array (
+      0 => '.\\templates\\menu.tpl',
+      1 => 1342658372,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '2224150075941609344-64764236',
+  'function' => 
+  array (
+  ),
+  'variables' => 
+  array (
+    'user' => 0,
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty 3.1.4',
+  'unifunc' => 'content_5007594198518',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5007594198518')) {function content_5007594198518($_smarty_tpl) {?><div id="menu">
 <ul id="sddm">
     <li><a href="#"
         onmouseover="mopen('m1')"
@@ -75,7 +100,8 @@
         </div>
     </li>
     <li>
-        <a href="{$smarty.server.PHP_SELF}?logout=1"
+        <a href="<?php echo $_SERVER['PHP_SELF'];?>
+?logout=1"
         onmouseover="mopen('m7')"
         onmouseout="mclosetime()">Salir</a>
         <div id="m7"
@@ -85,7 +111,8 @@
     </li>
 </ul>
 <td>
-Usuario en el sistema : {$user|upper}
+Usuario en el sistema : <?php echo mb_strtoupper($_smarty_tpl->tpl_vars['user']->value,SMARTY_RESOURCE_CHAR_SET);?>
+
 </td>
 <div style="clear:both"></div>
-<br>
+<br><?php }} ?>

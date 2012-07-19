@@ -44,6 +44,6 @@ class clsDatabase {
 
 $database = new clsDatabase();
 
-$database->conectar("root", "cangrejo", "localhost", "SGCRVM");
+$database->conectar("root", "", "localhost", "SGCRVM");
 
 ?>
