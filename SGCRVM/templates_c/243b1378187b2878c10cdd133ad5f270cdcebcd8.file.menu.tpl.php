@@ -1,29 +1,29 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2012-07-18 18:41:11
+<?php /* Smarty version Smarty 3.1.4, created on 2012-07-18 19:55:08
          compiled from "./templates/menu.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:14569685144ff9ff486827e3-21547163%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:44923455150075aec1ba504-77220272%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '243b1378187b2878c10cdd133ad5f270cdcebcd8' => 
     array (
       0 => './templates/menu.tpl',
-      1 => 1342588105,
+      1 => 1342659145,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '14569685144ff9ff486827e3-21547163',
+  'nocache_hash' => '44923455150075aec1ba504-77220272',
   'function' => 
   array (
   ),
-  'version' => 'Smarty 3.1.4',
-  'unifunc' => 'content_4ff9ff487a443',
   'variables' => 
   array (
     'user' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty 3.1.4',
+  'unifunc' => 'content_50075aec2679a',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_4ff9ff487a443')) {function content_4ff9ff487a443($_smarty_tpl) {?><div id="menu">
+<?php if ($_valid && !is_callable('content_50075aec2679a')) {function content_50075aec2679a($_smarty_tpl) {?><div id="menu">
 <ul id="sddm">
     <li><a href="#"
         onmouseover="mopen('m1')"
@@ -78,11 +78,23 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <a href="index.php?page=movimiento&accion=lista">Item3</a>
         </div>
     </li>
+<li><a href="#"
+        onmouseover="mopen('m5')"
+        onmouseout="mclosetime()">Reportes</a>
+        <div id="m5"
+            onmouseover="mcancelclosetime()"
+            onmouseout="mclosetime()">
+                <a href="index.php?page=reportes&accion=lista">ListaVisitas</a>
+        <a href="index.php?page=rventas&accion=lista">ReporteVentas</a>
+
+        </div>
+    </li>
+
 
     <li><a href="index.php?page=ayuda&accion=lista"
-        onmouseover="mopen('m5')"
+        onmouseover="mopen('m6')"
         onmouseout="mclosetime()">Ayuda</a>
-        <div id="m5"
+        <div id="m6"
             onmouseover="mcancelclosetime()"
             onmouseout="mclosetime()">
         </div>
@@ -90,9 +102,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <li>
         <a href="<?php echo $_SERVER['PHP_SELF'];?>
 ?logout=1"
-        onmouseover="mopen('m6')"
+        onmouseover="mopen('m7')"
         onmouseout="mclosetime()">Salir</a>
-        <div id="m6"
+        <div id="m7"
             onmouseover="mcancelclosetime()"
             onmouseout="mclosetime()">
         </div>
@@ -103,5 +115,4 @@ Usuario en el sistema : <?php echo mb_strtoupper($_smarty_tpl->tpl_vars['user']-
 
 </td>
 <div style="clear:both"></div>
-<br>
-<?php }} ?>
+<br><?php }} ?>

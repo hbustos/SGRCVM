@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2012-07-08 16:44:40
+<?php /* Smarty version Smarty 3.1.4, created on 2012-07-18 19:55:24
          compiled from "./templates/footer.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:4264922734ff9ff487a9363-35238559%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:7647852950075afc01a799-56299555%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,14 +11,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '4264922734ff9ff487a9363-35238559',
+  'nocache_hash' => '7647852950075afc01a799-56299555',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty 3.1.4',
-  'unifunc' => 'content_4ff9ff487b08c',
+  'unifunc' => 'content_50075afc01fdf',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_4ff9ff487b08c')) {function content_4ff9ff487b08c($_smarty_tpl) {?><br><br>
+<?php if ($_valid && !is_callable('content_50075afc01fdf')) {function content_50075afc01fdf($_smarty_tpl) {?><br><br>
 <div id="footer" align="center"><br> Copyright SOFTWARE.COM - 2012 - Todos los derechos reservados - Version 1.0 </div>
 <?php }} ?>

@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2012-07-15 20:33:38
+<?php /* Smarty version Smarty 3.1.4, created on 2012-07-18 19:55:29
          compiled from "./templates/lista_cliente.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:9742108524ffcf03c490643-15370414%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:81859007950075b01740794-38501120%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,20 +11,20 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '9742108524ffcf03c490643-15370414',
+  'nocache_hash' => '81859007950075b01740794-38501120',
   'function' => 
   array (
   ),
-  'version' => 'Smarty 3.1.4',
-  'unifunc' => 'content_4ffcf03c55e73',
   'variables' => 
   array (
     'array' => 0,
     'item' => 0,
   ),
   'has_nocache_code' => false,
+  'version' => 'Smarty 3.1.4',
+  'unifunc' => 'content_50075b018183c',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_4ffcf03c55e73')) {function content_4ffcf03c55e73($_smarty_tpl) {?><?php if (!is_callable('smarty_function_cycle')) include '/var/www/SGCRVM/smarty/libs/plugins/function.cycle.php';
+<?php if ($_valid && !is_callable('content_50075b018183c')) {function content_50075b018183c($_smarty_tpl) {?><?php if (!is_callable('smarty_function_cycle')) include '/var/www/SGCRVM/smarty/libs/plugins/function.cycle.php';
 ?><div align="center">
 <table>
 	<tr style="background: gray">
